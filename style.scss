@@ -1,0 +1,50 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+@import 'styles/header';
+@import 'styles/index';
+@import 'styles/offer';
+@import 'styles/pricing';
+@import 'styles/about';
+@import 'styles/contact';
+@import 'styles/footer';
+@import 'styles/portfolio';
+
+
+* 
+{
+    border:0;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body, html
+{
+
+    scroll-behavior: smooth;
+    min-width: 100%;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: $font;
+    overflow-x: hidden;
+    
+    
+}
+
+
+.body--open 
+{
+    overflow-y:hidden !important;
+}
+
+
+
+body 
+{
+    background: rgb(3,34,88);
+    background: linear-gradient(284deg, #032258 0%, #6a3c3c 100%);
+}
+
+

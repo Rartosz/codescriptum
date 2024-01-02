@@ -1,0 +1,223 @@
+.header 
+{
+    width:100%;
+    @include flex(center,center,row);
+    position:fixed;
+    top:0;
+    left:0;
+    padding:10px 80px;
+    height:80px;
+    z-index:999;
+    transition:background 0.4s;
+
+    @media only screen and (max-width: 1300px)
+    {
+        padding:10px 30px;
+    }
+
+    &--active 
+    {
+        background:white;
+        transition:background 0.4s;
+    }
+
+    &__logo 
+    {
+        outline:none;
+        text-decoration: none;
+        margin:0 auto 0 0;
+
+        img 
+        {
+            height:40px;
+        }
+    }
+
+    &__nav 
+    {
+        @include flex(center,center,row);
+        margin:0 0 0 auto;
+        gap:50px;
+
+
+        @media only screen and (max-width: 1000px)
+        {
+            background:white;
+            position:absolute;
+            @include  flex(center,flex-start,column);
+            height:calc(100vh - 80px);
+            top:100%;
+            width:100%;
+            left:0;
+            padding:30px 0 10px 0;
+            overflow-y:auto !important;
+            transform:translateX(100vw);
+            transition:0.4s;
+
+
+            &--open 
+            {
+                transform:translateX(0vw);
+                transition:0.4s;
+                overflow-y:auto;
+            }
+
+        }
+    }
+
+    &__hamburger 
+    {
+        width:40px;
+        height:40px;
+        position:relative;
+        @include flex(center,center,column);
+        border:none;
+        background:none;
+        outline:none;
+        display:none;
+        @media only screen and (max-width: 1000px) 
+        {
+            @include flex(center,center,column);
+        }
+
+        transition:0.4s;
+        &:hover 
+        {
+            cursor:pointer;
+            opacity:0.6;
+            transition:0.4s;
+        }
+
+
+        span 
+        {
+            width: 24px;
+            height:3px;
+            background:rgb(255, 255, 255);
+            position:absolute;
+            transition:background 0.4s;
+        }
+
+        .span--active 
+        {
+            background:$gradientDarkBlue;
+            transition:background 0.4s;
+        }
+
+        .first 
+        {
+            transition:0.4s;
+            transform:translateY(8px);
+        }
+        .second
+        {
+            transition:0.4s;
+            opacity:1;
+        }
+        .third
+        {
+            transition:0.4s;
+            transform:translateY(-8px);
+        }
+
+        .first--open
+        {
+            transition:0.4s;
+            transform:rotate(45deg);
+        }
+        .second--open
+        {
+            transition:0.4s;
+            opacity:0;
+        }
+        .third--open
+        {
+            transition:0.4s;
+            transform:rotate(-45deg);
+        }
+    }
+
+    &__flags 
+    {
+        @include flex(center,center,row);
+        gap:20px;
+    }
+
+    &__link 
+    {
+        color:white;
+        font-size:18px;
+        font-weight:400;
+        outline:none;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding:0 0 5px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        transition:0.4s;
+        @include flex(center,center,row);
+        gap:10px;
+
+        &:hover 
+        {
+            transition:0.4s;
+            border-bottom: 1px solid white;
+
+        }
+
+        &--button 
+        {
+            padding:8px 16px;
+            border:1px solid white;
+            &:hover 
+            {
+                background:rgb(241, 241, 241);
+                color:$gradientDarkBlue;
+                
+            }
+        }
+
+        &--active 
+        {
+            color:$gradientDarkBlue;
+
+            &:hover 
+            {
+                transition:0.4s;
+                border-bottom: 1px solid $gradientDarkBlue;
+    
+            }
+        }
+
+
+
+
+        @media only screen and (max-width: 1000px)
+        {
+            color:$gradientDarkBlue;
+
+            &--button 
+            {
+
+                border:1px solid $gradientDarkBlue;
+                &:hover 
+                {
+                    background:rgb(241, 241, 241);
+                    color:$gradientDarkBlue;
+                    
+                }
+            }
+        }
+    }
+
+
+    .header__link--button.header__link--active
+    {
+        border:1px solid $gradientDarkBlue;
+        &:hover 
+        {
+            background:$gradientDarkBlue;
+            color:white;
+            
+        }
+    }
+}

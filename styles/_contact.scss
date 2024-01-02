@@ -1,0 +1,281 @@
+.contact 
+{
+    width:100%;
+    padding:50px 0;
+    @include flex(center,center,column);
+    background-image: url('img/contact-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__cotainer
+    {
+        padding:40px 50px;
+        background:rgb(238, 237, 237);
+        @include flex(flex-start,center,row);
+        gap:50px;
+        border-radius: 20px;
+        width:fit-content;
+
+        -webkit-box-shadow: 0px 4px 14px -2px rgba(173, 177, 204, 1);
+        -moz-box-shadow: 0px 4px 14px -2px rgba(173, 177, 204, 1);
+        box-shadow: 0px 4px 14px -2px rgba(173, 177, 204, 1);
+
+        @media only screen and (max-width: 990px)
+        {
+            @include flex(center,center,column);
+            width:94%;
+            padding:30px 10px;
+            border-radius: 10px;
+        }
+    }
+
+    &__left 
+    {
+        @include flex(flex-start,flex-start,column);
+
+        @media only screen and (max-width: 990px)
+        {
+            width:100%;
+        }
+    }
+
+    &__h2
+    {
+        color:$blue;
+        font-size:28px;
+        font-weight: 500;
+        margin:0 0 10px 0;
+    }
+
+    &__p 
+    {
+        color:$gradientDarkBlue;
+        font-size:15px;
+        font-weight: 500;
+        margin:0 0 10px 0;
+    }
+
+
+
+
+
+
+    &__right 
+    {
+        @include flex(flex-start,flex-start,column);
+        position:relative;
+    }
+
+    &__img 
+    {
+        margin:0 0 40px 0;
+        width:280px;
+    }
+
+    &__element 
+    {
+        margin:0 0 20px 0;
+        @include flex(center,center,row);
+        font-size:16px;
+        font-weight: 500;
+        color:$gradientDarkBlue;
+
+        i 
+        {
+            color:$blue;
+            @include flex(center,center,row);
+            text-align: center;
+            padding:10px;
+            border:2px solid $blue;
+            border-radius: 100%;
+            font-size:19px;
+            margin:0 15px 0 0;
+            width:44px;
+            height:44px;
+        }
+    }
+
+    &__socials 
+    {
+        @include flex(center,center,column);
+        gap:20px;
+        position:absolute;
+        right:-109px;
+        bottom:0;
+        background:$blue;
+        padding:15px 16px;
+        border-radius: 0 6px 20px 0;
+        .social 
+        {
+            outline:none;
+            text-decoration: none;
+            transition:0.4s;
+            &:hover 
+            {
+                opacity:0.5;
+                transition:0.4s;
+            }
+            i 
+            {
+                color:white;
+                font-size:30px;
+            }
+        }
+
+        @media only screen and (max-width: 990px)
+        {
+            position:relative;
+            right:0;
+            border-radius: 5px;
+            @include flex(center,center,row);
+        }
+    }
+}
+
+.wpforms-field-container 
+{
+    @include flex(center,center,column);
+    display:flex !important;
+    gap:24px;
+    margin:0 0 10px 0 !important;
+}
+.formInput 
+{
+    @include flex(flex-start,flex-start,column);
+    padding:0 !important;
+    input 
+    {
+        max-width: fit-content !important;
+        min-width: 500px !important;
+        background:#7f8fe824 !important;
+        border-radius: 5px !important;
+        outline:none !important;
+        border:none !important;
+        color:$gradientDarkBlue !important;
+        font-size:14px !important;
+        font-weight: 500 !important;
+        padding:8px 10px !important;
+
+        &:active 
+        {
+            outline:none !important;
+        }
+
+        &:focus 
+        {
+            box-shadow:none !important;
+        }
+
+        @media only screen and (max-width: 990px)
+        {
+            min-width:100% !important;
+            
+            width:100% !important;
+        }
+    }
+}
+
+
+.formText
+{
+    @include flex(flex-start,flex-start,column);
+    padding:0 !important;
+    textarea
+    {
+        max-width: fit-content !important;
+        min-width: 500px !important;
+        background:#7f8fe824 !important;
+        border-radius: 5px !important;
+        outline:none !important;
+        border:none !important;
+        color:$gradientDarkBlue !important;
+        font-size:14px !important;
+        font-weight: 500 !important;
+        padding:8px 10px !important;
+
+        &:active 
+        {
+            outline:none !important;
+        }
+
+        &:focus 
+        {
+            box-shadow:none !important;
+        }
+        @media only screen and (max-width: 990px)
+        {
+            min-width:100% !important;
+            
+            width:100% !important;
+        }
+    }
+}
+
+
+.formSubmit 
+{
+    width:100% !important;
+    @include flex(center,center,column);
+    padding:10px 20px !important;
+    text-align: center !important;
+    outline:none !important;
+    text-decoration: none !important;
+    color:white !important;
+    background:$blue !important;
+    border:1px solid $blue !important;
+    font-size:16px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1.8px !important;
+    border-radius: 5px !important;
+    transition:0.4s !important;
+    &:hover 
+    {
+        background:transparent !important;
+        transition:0.4s !important;
+        color:$blue !important;
+    }
+
+    &::after 
+    {
+        border:none !important;
+        box-shadow: none !important;
+        background:none !important
+    }
+}
+
+
+.wpforms-container .wpforms-field
+{
+    @media only screen and (max-width: 990px)
+    {
+        width:100%;
+    }
+}
+
+.wpforms-container 
+{
+    @media only screen and (max-width: 990px)
+    {
+        width:100% !important;
+    }
+}
+
+
+#wpforms-5-field_4-container
+{
+    max-width:500px;
+    width:100%;
+    margin:0 auto 0 0 !important;
+}
+
+.wpforms-field-label 
+{
+    display:none !important;
+}
+
+.wpforms-field-label-inline 
+{
+    font-size:13px !important;
+    color:#181e41 !important;
+}

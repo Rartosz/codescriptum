@@ -1,0 +1,117 @@
+.portfolio 
+{
+    width:100%;
+
+    position:relative;
+    padding:80px 0;
+    background:rgb(238, 237, 237);
+
+    @include flex(center,center,column);
+
+
+    &__title 
+    {
+        color:$gradientDarkBlue;
+        font-size:30px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 2px -2px 1px rgba(24, 30, 65, 0.2);
+
+        margin:0 0 20px 0;
+
+        @media only screen and (max-width: 500px)
+        {
+            font-size:24px;
+        }
+    }
+
+    &__p1 
+    {
+        color:#727897;
+        max-width:900px;
+        text-align: center;
+        font-size:18px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin:0 0 80px 0;
+
+        @media only screen and (max-width: 910px)
+        {
+            width:90%;
+            font-size:15px;
+            line-height: 26px;
+            margin:0 0 30px 0;
+        }
+    }
+
+    &__wrapper 
+    {
+        width:100%;
+        max-width: 1000px;
+        grid-gap:30px;
+        padding:0 20px;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+
+        @media only screen and (max-width: 1000px)
+        {
+            grid-template-columns:1fr;
+        }
+    }
+
+    &__element 
+    {
+        width:100%;
+        @include flex(center,center,column);
+        position:relative;
+        outline:none;
+        text-decoration: none;
+        overflow:hidden;
+        border-radius: 3px;
+    }
+
+    &__image 
+    {
+        width:100%;
+        aspect-ratio:2/1;
+        object-fit: cover;
+    }
+
+    &__background 
+    {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:calc(100% - 43px);
+        background: rgb(3,34,88);
+        background: linear-gradient(278deg, rgba(3,34,88,1) 0%, rgba(106,60,60,1) 100%); 
+        opacity:0.8;
+
+        @media only screen and (max-width: 550px)
+        {
+            height:calc(100% - 39px);
+        }
+    }
+
+    &__elTitle 
+    {
+        color:white;
+        background: rgb(3,34,88);
+        background: linear-gradient(278deg, rgba(3,34,88,1) 0%, rgba(106,60,60,1) 100%); 
+        width:100%;
+        padding:10px;
+        font-size:20px;
+        font-weight: 400;
+        text-align: center;
+
+        @media only screen and (max-width: 550px)
+        {   
+            font-size:16px;
+        }
+    }
+
+
+}

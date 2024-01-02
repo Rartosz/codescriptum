@@ -1,0 +1,23 @@
+@mixin flex($align:center,$justify:center,$direction:row)
+{
+    display:flex;
+    flex-direction:$direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+@mixin paddingForContainers($top:0,$bottom:0)
+{
+    padding:$top 40px $bottom 40px;
+
+    @media only screen and (max-width: 1000px) 
+    {
+        padding:$top 20px $bottom 20px;
+    }
+
+    @media only screen and (max-width: 600px) 
+    {
+        padding:$top 10px $bottom 10px;
+    }
+}
