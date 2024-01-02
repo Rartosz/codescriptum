@@ -297,53 +297,60 @@
         <p class="offer__p1">Below you will find some of our works 💸🚀</p>
 
         <div class="portfolio__wrapper">
-            <a href="https://labratsjobs.pl/" class="portfolio__element" data-aos="zoom-out">
+            <a href="https://labratsjobs.pl/" class="portfolio__element" data-aos="zoom-out" target="_blank">
                 <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/labratsjobs.png">
                 <div class="portfolio__background"></div>
                 <h3 class="portfolio__elTitle">LabRatsJobs - Job Board</h3>
             </a>
-            <a href="https://floteocars.pl/" class="portfolio__element" data-aos="zoom-out">
+            <a href="https://floteocars.pl/" class="portfolio__element" data-aos="zoom-out" target="_blank">
                 <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/floteo.png">
                 <div class="portfolio__background"></div>
                 <h3 class="portfolio__elTitle">Floteo - Car Leasing</h3>
             </a>
-            <a href="https://ex.bcp24.io/" class="portfolio__element" data-aos="zoom-out">
+            <a href="https://ex.bcp24.io/" class="portfolio__element" data-aos="zoom-out" target="_blank">
                 <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/bcp24.png">
                 <div class="portfolio__background"></div>
                 <h3 class="portfolio__elTitle">Cryptocurrency Exchange</h3>
             </a>
-            <a href="https://jsystems.pl/" class="portfolio__element" data-aos="zoom-out">
+            <a href="https://jsystems.pl/" class="portfolio__element" data-aos="zoom-out" target="_blank">
                 <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/jsystems.png">
                 <div class="portfolio__background"></div>
                 <h3 class="portfolio__elTitle">JSystems - training company</h3>
             </a>
-            <a href="https://koronkoza.pl/" class="portfolio__element" data-aos="zoom-out">
-                <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/koronkoza.jpg">
+            <a href="https://www.maxdent.pl/" class="portfolio__element" data-aos="zoom-out" target="_blank">
+                <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/maxdent.png">
                 <div class="portfolio__background"></div>
-                <h3 class="portfolio__elTitle">Koronkoza.pl - Shop</h3>
+                <h3 class="portfolio__elTitle">Part of the project - Dental Office</h3>
             </a>
-            <a href="https://explorer.bcp24.io/" class="portfolio__element" data-aos="zoom-out">
+            <a href="https://explorer.bcp24.io/" class="portfolio__element" data-aos="zoom-out" target="_blank">
                 <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/explorer.png">
                 <div class="portfolio__background"></div>
                 <h3 class="portfolio__elTitle">Cryptocurrency Explorer</h3>
             </a>
-            <a href="https://lemonmobile.pl/" class="portfolio__element" data-aos="zoom-out">
+            <a href="https://lemonmobile.pl/" class="portfolio__element" data-aos="zoom-out" target="_blank">
                 <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/lemonmobile.png">
                 <div class="portfolio__background"></div>
                 <h3 class="portfolio__elTitle">Lemonmobile - Telecom</h3>
             </a>
 
-            <a href="https://22bit.io/" class="portfolio__element" data-aos="zoom-out">
+            <a href="https://peakforce.dev/" class="portfolio__element" data-aos="zoom-out" target="_blank">
+                <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/peakforce.png">
+                <div class="portfolio__background"></div>
+                <h3 class="portfolio__elTitle">Part of the project - Company Website</h3>
+            </a>
+
+            <a href="https://gymhub.pro/pl/" class="portfolio__element" data-aos="zoom-out" target="_blank">
+                <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/gymhub.png">
+                <div class="portfolio__background"></div>
+                <h3 class="portfolio__elTitle">GYMHUB Ecommerce shop</h3>
+            </a>
+
+            <a href="https://22bit.io/" class="portfolio__element" data-aos="zoom-out" target="_blank">
                 <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/22bit.png">
                 <div class="portfolio__background"></div>
                 <h3 class="portfolio__elTitle">22bit - cryptocurrency exchange</h3>
             </a>
-<!-- 
-            <a href="https://wladyslawowonocleg.pl/" class="portfolio__element" data-aos="zoom-out">
-                <img class="portfolio__image" src="<?php echo get_bloginfo('template_directory') ?>/img/portfolio/wladyslawowonocleg.png">
-                <div class="portfolio__background"></div>
-                <h3 class="portfolio__elTitle">Noclegi Władysławowo</h3>
-            </a> -->
+
         </div>  
 </section>
 
