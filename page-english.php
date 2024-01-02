@@ -384,10 +384,10 @@
                 </div>
     
                 <div class="contact__socials">
-                    <a href="https://www.linkedin.com/in/bartosz-gromek-80a484184/" class="social">
+                    <a href="https://www.linkedin.com/in/bartosz-gromek-80a484184/" class="social" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://www.facebook.com/codescriptum" class="social">
+                    <a href="https://www.facebook.com/codescriptum" class="social"  target="_blank">
                         <i class="fa-brands fa-square-facebook"></i>
                     </a>
                 </div>
